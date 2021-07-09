@@ -17,6 +17,7 @@ include 'config.php';
     <div class="row" style="margin-top:10px;">
       <div class="large-12">
         <?php
+          //Execute the query
           $result = $mysqli->query("SELECT * from products order by id asc");
           if($result) {
             while($obj = $result->fetch_object()) {
